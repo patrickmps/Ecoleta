@@ -1,0 +1,143 @@
+@media (max-width: 900px) { /*Responsividade quando a largura de resolução é menor que 900px*/
+    #page-home {
+        background-position-x: 70vw;/*Move o background para ficar invisível*/
+    }
+
+    #page-home .content { /*Centraliza o conteúdo*/
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-home header a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 130px;
+    }
+
+    #page-home main {
+        align-items: center;
+        margin-bottom: 150px;
+    }
+
+    #page-search-results .cards {
+        grid-template-columns: 1fr;
+    }
+
+    #page-search-results .cards img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 425px){
+    #page-home header {
+        margin-bottom: 24px;
+    }
+
+    #page-home main {
+        margin-bottom: 70px;
+    }
+
+    #page-home main h1 {
+        font-size: 36px;
+    }
+    
+    #page-home main p {
+        font-size: 18px;
+        line-height: 38px;
+    }
+
+    #page-home header a {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 130px;
+    }
+}
+
+@media (min-width: 768px){
+    #page-home main {
+        margin-bottom: 70px;
+    }
+
+    #page-home main h1 {
+        font-size: 48px;
+    }
+    
+    #page-home main p {
+        font-size: 22px;
+        line-height: 38px;
+        margin-top: 24px;
+    }
+
+}
+
+@media (min-width: 1700px) { /*Define um limite de movimentação quando largura superior a 1700px*/
+    #page-home {
+        background-position-x: 60vw;
+    }
+}
+
+@media (max-height: 720px) { /*Limita a altura do documento a 200px quando altura da tela for maior que 720px*/
+    #page-home {
+        background-position-y: 200px;
+    }
+}
+
+@media (max-width: 630px) {
+    #page-create-point header {
+        justify-content: center;
+    }
+
+    #page-create-point form {
+        padding: 36px;
+        align-items: center;
+        text-align: center;
+    }
+
+    #page-create-point form .field-group{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+    }
+
+    #page-create-point form .field-group .field + .field {
+        margin-left: 0;
+    }
+
+    .items-grid {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 12px;
+    }
+
+    #page-create-point form legend h2 {
+        font-size: 20px;
+        margin-bottom: 8px;
+    }
+    
+    #page-create-point form legend {
+        display: block;
+        align-items: center;
+    }
+    #page-create-point header a {
+        position: absolute;
+        top: 130px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    #page-create-point form h1 {
+        font-size: 32px;
+    }
+
+    #page-create-point form input, #page-create-point form select {
+        padding: 12px 20px;
+    }
+
+    #page-create-point form button {
+        width: 230px;
+        height: 48px;
+      
+    }
+}

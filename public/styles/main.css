@@ -1,0 +1,29 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&family=Ubuntu:wght@700&display=swap');
+
+* { /*Corresponde as configurações de todo o estilo do site*/
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root { /*Cria variáveis na raiz para serem usadas em todo o css da aplicação*/
+    --title-color: #322153;
+    --primary-color: #34cb79;
+}
+
+body {
+    background: #f0f0f5;
+    -webkit-font-smoothing: antialiased;/*Suavisa a fonte*/
+}
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--title-color);
+}
+
